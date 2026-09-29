@@ -1,7 +1,5 @@
-OST 배포 이미지
+OST GitHub Pages 수정 배포본
 
-포함된 이미지:
-- ost-group.png: 업로드된 단체 일러스트
-- 휴맨.png, 시아.png, Lua.png, 민기.png, 우유.png, 유감.png, 이겸.png: 멤버 프로필
-
-GitHub Pages에 배포할 때 index.html, profile.html, assets 폴더를 저장소 루트에 함께 올려주세요.
+수정 사항: HTML에서 assets/ 하위 경로를 참조하던 부분을 저장소 루트의 이미지 파일명으로 변경했습니다.
+이 배포본은 index.html, profile.html, 이미지 파일을 모두 같은 폴더(저장소 루트)에 둡니다.
+기존 GitHub 저장소에 업로드할 때 파일명을 유지하고 덮어쓰기/추가 업로드한 뒤 Pages 배포를 기다려 주세요.
