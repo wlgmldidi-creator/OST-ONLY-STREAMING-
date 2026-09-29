@@ -47,7 +47,7 @@
       .hero-arrow { position: absolute; bottom: 34px; left: 0; display: flex; align-items: center; gap: 10px; font: 500 10px "DM Mono", monospace; letter-spacing: .06em; }
       .round-arrow { display: grid; place-items: center; width: 29px; height: 29px; background: var(--red); border-radius: 50%; color: var(--paper); font-size: 15px; }
       .hero-art { border-left: 2px solid var(--line); position: relative; overflow: hidden; background: #171519; }
-      .group-illustration { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+      .group-illustration { display: block; visibility: visible; opacity: 1; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
       .group-caption { position: absolute; right: 18px; bottom: 16px; z-index: 1; padding: 7px 9px; color: var(--paper); background: rgba(22,21,19,.82); font: 500 10px "DM Mono", monospace; letter-spacing: .07em; }
       .hero-footer { min-height: 87px; display: grid; grid-template-columns: .76fr 1.24fr; }
       .hero-footer > div { padding: 20px 0; display: flex; align-items: center; gap: 18px; }
@@ -87,7 +87,7 @@
       .portrait { width: 135px; height: 168px; position: relative; overflow: hidden; background: var(--blue); color: var(--ink); }
       .portrait::before { content: ""; position: absolute; width: 58px; height: 58px; border-radius: 50%; top: 20px; left: 26px; background: #f7d2b0; }
       .portrait::after { content: ""; position: absolute; width: 81px; height: 58px; border-radius: 50% 50% 10px 10px; bottom: -4px; left: 15px; background: #2d4c68; }
-      .portrait img, .member-photo img { position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
+      .portrait img, .member-photo img { display: block; visibility: visible; opacity: 1; position: absolute; inset: 0; z-index: 2; width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
       .portrait.has-image::before, .portrait.has-image::after { display: none; }
       .leader:nth-child(2) .portrait { background: var(--orange); }
       .leader:nth-child(2) .portrait::after { background: #8d4b45; }
@@ -142,7 +142,7 @@
         .hero-copy { min-height: 445px; padding: 60px 0 48px; }
         .hero-copy h1 { font-size: clamp(56px, 17vw, 86px); }
         .hero-art { min-height: 310px; border-left: 0; border-top: 2px solid var(--line); }
-        .group-illustration { object-fit: cover; object-position: center 38%; }
+        .group-illustration { display: block; visibility: visible; opacity: 1; object-fit: cover; object-position: center 38%; }
         .hero-footer > div + div { border-left: 0; border-top: 2px solid var(--line); padding-left: 0; }
         .section-top { display: block; }
         .section-description { margin-top: 27px; }
@@ -187,7 +187,7 @@
             <a class="hero-arrow" href="#about"><span class="round-arrow">↓</span> SCROLL TO LISTEN</a>
           </div>
           <div class="hero-art">
-            <img class="group-illustration" src="ost-group.png" alt="Only Streaming Team 단체 일러스트" />
+            <img class="group-illustration" src="/OST-ONLY-STREAMING-/ost-group.png" alt="Only Streaming Team 단체 일러스트" />
             <span class="group-caption">OST · ALL MEMBERS</span>
           </div>
         </div>
@@ -224,12 +224,12 @@
 
           <div class="leader-stage" aria-label="팀장 및 부팀장 소개">
             <article class="leader" data-profile-id="lead">
-              <span class="leader-no">LEAD / 01</span><div class="portrait" data-photo><img src="휴맨.png" alt="휴맨 팀장 일러스트" /></div>
+              <span class="leader-no">LEAD / 01</span><div class="portrait" data-photo><img src="/OST-ONLY-STREAMING-/휴맨.png" alt="휴맨 팀장 일러스트" /></div>
               <div><span class="leader-role" data-role>TEAM LEAD</span><h3 data-name>휴맨</h3><p data-intro>OST의 방향을 함께 정하고, 팀의 이야기가 더 멀리 닿도록 이끕니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#팀장</span></div></div>
               <a class="profile-link" href="profile.html?member=휴맨" aria-label="휴맨의 프로필 페이지 열기"></a>
             </article>
             <article class="leader" data-profile-id="deputy">
-              <span class="leader-no">LEAD / 02</span><div class="portrait" data-photo><img src="시아.png" alt="시아 부팀장 일러스트" /></div>
+              <span class="leader-no">LEAD / 02</span><div class="portrait" data-photo><img src="/OST-ONLY-STREAMING-/시아.png" alt="시아 부팀장 일러스트" /></div>
               <div><span class="leader-role" data-role>DEPUTY LEAD</span><h3 data-name>시아</h3><p data-intro>아이디어와 팀을 자연스럽게 연결하며, OST의 다음 장면을 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#부팀장</span></div></div>
               <a class="profile-link" href="profile.html?member=시아" aria-label="시아의 프로필 페이지 열기"></a>
             </article>
@@ -237,11 +237,11 @@
 
           <div class="member-caption"><h3>MEET THE CREW</h3><span>05 PEOPLE · ONE FREQUENCY</span></div>
           <div class="member-grid">
-            <article class="member" data-profile-id="member1"><span class="member-number">MEMBER / 01</span><div class="member-photo" data-photo><span>민기</span><img src="민기.png" alt="민기 일러스트" /></div><h4 data-name>민기</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=민기" aria-label="민기의 프로필 페이지 열기"></a></article>
-            <article class="member" data-profile-id="member2"><span class="member-number">MEMBER / 02</span><div class="member-photo" data-photo><span>LU</span><img src="Lua.png" alt="Lua 일러스트" /></div><h4 data-name>Lua</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=Lua" aria-label="Lua의 프로필 페이지 열기"></a></article>
-            <article class="member" data-profile-id="member3"><span class="member-number">MEMBER / 03</span><div class="member-photo" data-photo><span>우유</span><img src="우유.png" alt="우유 일러스트" /></div><h4 data-name>우유</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=우유" aria-label="우유의 프로필 페이지 열기"></a></article>
-            <article class="member" data-profile-id="member4"><span class="member-number">MEMBER / 04</span><div class="member-photo" data-photo><span>유감</span><img src="유감.png" alt="유감 일러스트" /></div><h4 data-name>유감</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=유감" aria-label="유감의 프로필 페이지 열기"></a></article>
-            <article class="member" data-profile-id="member5"><span class="member-number">MEMBER / 05</span><div class="member-photo" data-photo><span>이겸</span><img src="이겸.png" alt="이겸 일러스트" /></div><h4 data-name>이겸</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=이겸" aria-label="이겸의 프로필 페이지 열기"></a></article>
+            <article class="member" data-profile-id="member1"><span class="member-number">MEMBER / 01</span><div class="member-photo" data-photo><span>민기</span><img src="/OST-ONLY-STREAMING-/민기.png" alt="민기 일러스트" /></div><h4 data-name>민기</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=민기" aria-label="민기의 프로필 페이지 열기"></a></article>
+            <article class="member" data-profile-id="member2"><span class="member-number">MEMBER / 02</span><div class="member-photo" data-photo><span>LU</span><img src="/OST-ONLY-STREAMING-/Lua.png" alt="Lua 일러스트" /></div><h4 data-name>Lua</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=Lua" aria-label="Lua의 프로필 페이지 열기"></a></article>
+            <article class="member" data-profile-id="member3"><span class="member-number">MEMBER / 03</span><div class="member-photo" data-photo><span>우유</span><img src="/OST-ONLY-STREAMING-/우유.png" alt="우유 일러스트" /></div><h4 data-name>우유</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=우유" aria-label="우유의 프로필 페이지 열기"></a></article>
+            <article class="member" data-profile-id="member4"><span class="member-number">MEMBER / 04</span><div class="member-photo" data-photo><span>유감</span><img src="/OST-ONLY-STREAMING-/유감.png" alt="유감 일러스트" /></div><h4 data-name>유감</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=유감" aria-label="유감의 프로필 페이지 열기"></a></article>
+            <article class="member" data-profile-id="member5"><span class="member-number">MEMBER / 05</span><div class="member-photo" data-photo><span>이겸</span><img src="/OST-ONLY-STREAMING-/이겸.png" alt="이겸 일러스트" /></div><h4 data-name>이겸</h4><p class="member-role" data-role>OST MEMBER</p><p class="member-copy" data-intro>OST의 이야기를 함께 만들어갑니다.</p><div class="profile-tags" data-tags><span>#OST</span><span>#TEAM</span></div><a class="profile-link" href="profile.html?member=이겸" aria-label="이겸의 프로필 페이지 열기"></a></article>
           </div>
 
         </div>

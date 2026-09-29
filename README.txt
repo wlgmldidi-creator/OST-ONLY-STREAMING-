@@ -1,5 +1,5 @@
-OST GitHub Pages 수정 배포본
+메인 페이지 이미지 표시 보완본
 
-수정 사항: HTML에서 assets/ 하위 경로를 참조하던 부분을 저장소 루트의 이미지 파일명으로 변경했습니다.
-이 배포본은 index.html, profile.html, 이미지 파일을 모두 같은 폴더(저장소 루트)에 둡니다.
-기존 GitHub 저장소에 업로드할 때 파일명을 유지하고 덮어쓰기/추가 업로드한 뒤 Pages 배포를 기다려 주세요.
+index.html의 메인 화면 이미지 주소를 GitHub Pages 프로젝트 경로로 명시하고, 이미지 표시 CSS(display/visibility/opacity)를 명시했습니다.
+기존 저장소의 index.html을 이 파일로 교체하세요. 나머지 파일과 이미지도 동일 폴더 구조로 유지하세요.
+저장소: wlgmldidi-creator/OST-ONLY-STREAMING-
