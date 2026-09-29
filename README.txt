@@ -1,5 +1,5 @@
-메인 페이지 이미지 표시 보완본
+OST 스푼캐스트 개인 프로필 링크 연결 배포본
 
-index.html의 메인 화면 이미지 주소를 GitHub Pages 프로젝트 경로로 명시하고, 이미지 표시 CSS(display/visibility/opacity)를 명시했습니다.
-기존 저장소의 index.html을 이 파일로 교체하세요. 나머지 파일과 이미지도 동일 폴더 구조로 유지하세요.
-저장소: wlgmldidi-creator/OST-ONLY-STREAMING-
+개별 프로필의 PERSONAL WEBSITE 버튼에 각 멤버가 제공한 스푼캐스트 프로필 URL 7개를 연결했습니다.
+버튼은 등록된 스푼캐스트 주소를 새 창으로 엽니다.
+GitHub Pages 저장소 루트에서 profile.html을 교체하고 기존 index.html 및 이미지 파일과 함께 유지하세요.

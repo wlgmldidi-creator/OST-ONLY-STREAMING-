@@ -7,18 +7,30 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--paper:#f5f2eb;--ink:#161513;--red:#f34c3e;--orange:#ffbf6c;--blue:#b7d1e8}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans","Noto Sans KR",sans-serif}.top{height:10px;background:var(--red)}main{width:min(900px,calc(100% - 40px));margin:0 auto;padding:34px 0 70px}a{color:inherit;text-decoration:none}.brand{font-weight:700;font-size:17px;letter-spacing:-.06em;border-bottom:2px solid var(--ink);padding-bottom:20px}.card{margin-top:44px;border:2px solid var(--ink);display:grid;grid-template-columns: minmax(220px, .8fr) 1.2fr;min-height:380px}.visual{background:var(--blue);display:grid;place-items:center;position:relative;overflow:hidden;min-height:300px}.visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.initial{font:700 80px "DM Mono",monospace;color:rgba(22,21,19,.45)}.info{padding:clamp(24px,5vw,52px)}.eyebrow{font:500 11px "DM Mono",monospace;color:var(--red);letter-spacing:.1em}.info h1{font-size:clamp(42px,8vw,72px);letter-spacing:-.09em;margin:18px 0 8px}.role{font:500 12px "DM Mono",monospace}.desc{line-height:1.8;margin:28px 0;color:#4c4944}.tags{display:flex;gap:7px;flex-wrap:wrap}.tags span{background:#e8e3da;padding:6px 9px;font:11px "DM Mono",monospace}.back{display:inline-block;margin-top:26px;padding:12px 16px;background:var(--ink);color:var(--paper);font-weight:700;font-size:13px}@media(max-width:600px){.card{grid-template-columns:1fr}.visual{min-height:280px}.info{padding:27px}}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans","Noto Sans KR",sans-serif}.top{height:10px;background:var(--red)}main{width:min(900px,calc(100% - 40px));margin:0 auto;padding:34px 0 70px}a{color:inherit;text-decoration:none}.brand{font-weight:700;font-size:17px;letter-spacing:-.06em;border-bottom:2px solid var(--ink);padding-bottom:20px}.card{margin-top:44px;border:2px solid var(--ink);display:grid;grid-template-columns: minmax(220px, .8fr) 1.2fr;min-height:380px}.visual{background:var(--blue);display:grid;place-items:center;position:relative;overflow:hidden;min-height:300px}.visual img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}.initial{font:700 80px "DM Mono",monospace;color:rgba(22,21,19,.45)}.info{padding:clamp(24px,5vw,52px)}.eyebrow{font:500 11px "DM Mono",monospace;color:var(--red);letter-spacing:.1em}.info h1{font-size:clamp(42px,8vw,72px);letter-spacing:-.09em;margin:18px 0 8px}.role{font:500 12px "DM Mono",monospace}.desc{line-height:1.8;margin:28px 0;color:#4c4944}.tags{display:flex;gap:7px;flex-wrap:wrap}.tags span{background:#e8e3da;padding:6px 9px;font:11px "DM Mono",monospace}
+.personal-site{margin-top:28px;padding:18px;border:1.5px solid var(--ink);display:flex;align-items:center;justify-content:space-between;gap:16px;background:rgba(255,255,255,.45)}
+.personal-site-copy strong{display:block;font:500 10px "DM Mono",monospace;letter-spacing:.1em;color:var(--red)}
+.personal-site-copy p{margin:7px 0 0;font-size:12px;line-height:1.55;color:#4c4944}
+.personal-site-link{flex:0 0 auto;display:inline-flex;align-items:center;gap:12px;padding:11px 13px;background:var(--ink);color:var(--paper);font-size:12px;font-weight:700}
+.personal-site-link[aria-disabled="true"]{background:#d9d4cb;color:#69655e;cursor:not-allowed}
+@media(max-width:600px){.personal-site{align-items:flex-start;flex-direction:column}.personal-site-link{width:100%;justify-content:space-between}}
+.back{display:inline-block;margin-top:26px;padding:12px 16px;background:var(--ink);color:var(--paper);font-weight:700;font-size:13px}@media(max-width:600px){.card{grid-template-columns:1fr}.visual{min-height:280px}.info{padding:27px}}
 </style>
-</head><body><div class="top"></div><main><div class="brand">OST / ONLY STREAMING TEAM</div><div class="card"><div class="visual"><span class="initial" id="initial">OST</span><img id="photo" alt="" hidden></div><div class="info"><div class="eyebrow">MEMBER PROFILE · OST</div><h1 id="name">멤버</h1><div class="role" id="role">OST MEMBER</div><p class="desc" id="desc">OST의 이야기를 함께 만들어갑니다.</p><div class="tags" id="tags"><span>#OST</span><span>#TEAM</span></div><a class="back" href="index.html#people">← 팀 소개로 돌아가기</a></div></div></main>
+</head><body><div class="top"></div><main><div class="brand">OST / ONLY STREAMING TEAM</div><div class="card"><div class="visual"><span class="initial" id="initial">OST</span><img id="photo" alt="" hidden></div><div class="info"><div class="eyebrow">MEMBER PROFILE · OST</div><h1 id="name">멤버</h1><div class="role" id="role">OST MEMBER</div><p class="desc" id="desc">OST의 이야기를 함께 만들어갑니다.</p><div class="tags" id="tags"><span>#OST</span><span>#TEAM</span></div>
+<section class="personal-site" aria-label="개인 사이트 바로가기">
+<div class="personal-site-copy"><strong>PERSONAL WEBSITE</strong><p id="personalSiteMessage">멤버의 개인 홈페이지 및 활동 공간으로 이동할 수 있습니다.</p></div>
+<a class="personal-site-link" id="personalSiteLink" href="#" aria-disabled="true" aria-label="개인 사이트 링크 준비 중">개인 사이트 준비 중 <span aria-hidden="true">↗</span></a>
+</section>
+<a class="back" href="index.html#people">← 팀 소개로 돌아가기</a></div></div></main>
 <script>
 const members={
-"휴맨":{role:"TEAM LEAD",desc:"OST의 방향을 함께 정하고, 팀의 이야기가 더 멀리 닿도록 이끕니다.",tags:["OST","팀장"],img:"휴맨.png"},
-"시아":{role:"DEPUTY LEAD",desc:"아이디어와 팀을 자연스럽게 연결하며, OST의 다음 장면을 함께 만들어갑니다.",tags:["OST","부팀장"],img:"시아.png"},
-"민기":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"민기.png"},
-"Lua":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"Lua.png"},
-"우유":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"우유.png"},
-"유감":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"유감.png"},
-"이겸":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"이겸.png"}
+"휴맨":{role:"TEAM LEAD",desc:"OST의 방향을 함께 정하고, 팀의 이야기가 더 멀리 닿도록 이끕니다.",tags:["OST","팀장"],img:"휴맨.png",site:"https://www.spooncast.net/kr/@y32979z?utm_source=spoon_share&utm_medium=referral&utm_campaign=profile_share&utm_content=10291412&utm_term=10291412&ts=1790537586219"},
+"시아":{role:"DEPUTY LEAD",desc:"아이디어와 팀을 자연스럽게 연결하며, OST의 다음 장면을 함께 만들어갑니다.",tags:["OST","부팀장"],img:"시아.png",site:"https://www.spooncast.net/kr/@sia1914?utm_source=spoon_share&utm_medium=referral&utm_campaign=profile_share&utm_content=2897340&utm_term=2897340&ts=1790537598675"},
+"민기":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"민기.png",site:"https://www.spooncast.net/kr/@mingi0811?utm_source=spoon_share&utm_medium=referral&utm_campaign=profile_share&utm_content=9419028&utm_term=9419028&ts=1790537552879"},
+"Lua":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"Lua.png",site:"https://www.spooncast.net/kr/@x9pp364?utm_source=spoon_share&utm_medium=referral&utm_campaign=profile_share&utm_content=10385611&utm_term=10385611&ts=1790537573719"},
+"우유":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"우유.png",site:"https://www.spooncast.net/kr/@2dollar?utm_source=spoon_share&utm_medium=referral&utm_campaign=profile_share&utm_content=9030041&utm_term=9030041&ts=1790537620981"},
+"유감":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"유감.png",site:"https://www.spooncast.net/kr/@yougam?utm_source=spoon_share&utm_medium=referral&utm_campaign=profile_share&utm_content=10220848&utm_term=10220848&ts=1790537609361"},
+"이겸":{role:"OST MEMBER",desc:"OST의 이야기를 함께 만들어갑니다.",tags:["OST","TEAM"],img:"이겸.png",site:"https://www.spooncast.net/kr/@bourbon_2003?utm_source=spoon_share&utm_medium=referral&utm_campaign=profile_share&utm_content=2455446&utm_term=2455446&ts=1790537631259"}
 };
 const name=new URLSearchParams(location.search).get("member")||"민기";
 const m=members[name]||members["민기"];
@@ -28,6 +40,20 @@ document.getElementById("role").textContent=m.role;
 document.getElementById("desc").textContent=m.desc;
 document.getElementById("initial").textContent=[...name].slice(0,2).join("").toUpperCase();
 document.getElementById("tags").replaceChildren(...m.tags.map(t=>{const s=document.createElement("span");s.textContent="#"+t;return s}));
+const personalSiteLink=document.getElementById("personalSiteLink");
+const personalSiteMessage=document.getElementById("personalSiteMessage");
+if(m.site && /^https?:\\/\\//i.test(m.site)){
+  personalSiteLink.href=m.site;
+  personalSiteLink.target="_blank";
+  personalSiteLink.rel="noopener noreferrer";
+  personalSiteLink.removeAttribute("aria-disabled");
+  personalSiteLink.setAttribute("aria-label",name+" 개인 사이트 새 창에서 열기");
+  personalSiteLink.innerHTML='개인 사이트 방문 <span aria-hidden="true">↗</span>';
+  personalSiteMessage.textContent="등록된 개인 홈페이지 및 활동 공간을 새 창에서 엽니다.";
+}else{
+  personalSiteLink.addEventListener("click",event=>event.preventDefault());
+}
+
 const img=document.getElementById("photo");img.src=m.img;img.alt=name+" 프로필 일러스트";img.hidden=false;
 img.onerror=()=>{img.hidden=true};
 </script></body></html>
