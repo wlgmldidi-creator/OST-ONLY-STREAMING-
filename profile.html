@@ -42,7 +42,7 @@ document.getElementById("initial").textContent=[...name].slice(0,2).join("").toU
 document.getElementById("tags").replaceChildren(...m.tags.map(t=>{const s=document.createElement("span");s.textContent="#"+t;return s}));
 const personalSiteLink=document.getElementById("personalSiteLink");
 const personalSiteMessage=document.getElementById("personalSiteMessage");
-if(m.site && /^https?:\\/\\//i.test(m.site)){
+if(m.site && (m.site.startsWith("https://") || m.site.startsWith("http://"))){
   personalSiteLink.href=m.site;
   personalSiteLink.target="_blank";
   personalSiteLink.rel="noopener noreferrer";
